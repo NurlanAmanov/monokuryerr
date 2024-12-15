@@ -9,6 +9,9 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+html,body{
+    overflow-x: hidden;
+}
 /* Cedveller */
 .qiymet-cedveleri{
     padding: 15px;
