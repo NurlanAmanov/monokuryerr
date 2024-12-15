@@ -1,357 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link href="src/input.css" rel="stylesheet">
-    <link href="src/output.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="Css/stylee.css">
-    <title>MonoKuryer.az | Sürətli və Etibarlı Çatdırılma Xidməti</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link href="src/input.css" rel="stylesheet">
+  <link href="src/output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="Css/stylee.css">
+  <title>MonoKuryer.az | Sürətli və Etibarlı Çatdırılma Xidməti</title>
 </head>
 
 <body>
 
-    <header class='flex shadow-md py-1 px-4 sm:px-10 bg-[#fff] h-[100px] tracking-wide relative w-full  z-50'>
-     
+  <header class='flex shadow-md py-1 px-4 sm:px-10 bg-[#fff] h-[100px] tracking-wide relative w-full  z-50'>
 
-        <div class='flex flex-wrap items-center gap-4 w-full'>
-            <a href="javascript:void(0)"><img src="img/gallery/logo2.png" alt="logo" class='w-[85px] object-cover' />
+
+    <div class='flex flex-wrap items-center gap-4 w-full'>
+      <a href="javascript:void(0)"><img src="img/gallery/logo2.png" alt="logo" class='w-[85px] object-cover' />
+      </a>
+
+      <div id="collapseMenu"
+        class='lg:ml-16 max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-40 max-lg:before:inset-0 max-lg:before:z-50'>
+        <button id="toggleClose" class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3'>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-black" viewBox="0 0 320.591 320.591">
+            <path
+              d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+              data-original="#000000"></path>
+            <path
+              d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+              data-original="#000000"></path>
+          </svg>
+        </button>
+
+        <ul
+          class='lg:flex lg:gap-x-4 max-lg:space-y-3 max-lg:fixed  max-lg:bg-white max-lg:w-2/3 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-4 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+          <li class='max-lg:border-b max-lg:pb-4 px-3 lg:hidden'>
+            <a href="javascript:void(0)"><img src="img/gallery/logo2.png" alt="logo" class='w-32' />
             </a>
+          </li>
+          <li class='max-lg:border-b max-lg:py-3 px-3'>
+            <a href='javascript:void(0)' class='hover:text-[#007bff]  block font-semibold text-[18px]'>Ana səhifə
+            </a>
+          </li>
+          <li class='max-lg:border-b max-lg:py-3 px-3'><a href='page/Haqqimizda.htm'
+              class='hover:text-[#007bff] text-black block font-semibold text-[18px]'>Haqqimizda</a>
+          </li>
+          <li class='max-lg:border-b max-lg:py-3 px-3'><a href='page/partyor.htm'
+              class='hover:text-[#007bff] text-black block font-semibold text-[18px]'>Partnyorlar
+            </a>
+          </li>
 
-            <div id="collapseMenu"
-                class='lg:ml-16 max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-40 max-lg:before:inset-0 max-lg:before:z-50'>
-                <button id="toggleClose" class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3'>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-black" viewBox="0 0 320.591 320.591">
-                        <path
-                            d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
-                            data-original="#000000"></path>
-                        <path
-                            d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
-                            data-original="#000000"></path>
-                    </svg>
-                </button>
+          <li class='max-lg:border-b max-lg:py-3 px-3'><a href='page/Xidmetler.htm'
+              class='hover:text-[#007bff] text-black block font-semibold text-[18px]'>Xidmətlər</a>
+          </li>
+          <li class='max-lg:border-b max-lg:py-3 px-3'><a href='page/Elaqe.htm'
+              class='hover:text-[#007bff] text-black block font-semibold text-[18px]'>Əlaqə</a>
+          </li>
+        </ul>
+      </div>
 
-                <ul
-                    class='lg:flex lg:gap-x-4 max-lg:space-y-3 max-lg:fixed  max-lg:bg-white max-lg:w-2/3 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-4 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
-                    <li class='max-lg:border-b max-lg:pb-4 px-3 lg:hidden'>
-                        <a href="javascript:void(0)"><img src="img/gallery/logo2.png" alt="logo"
-                                class='w-32' />
-                        </a>
-                    </li>
-                    <li class='max-lg:border-b max-lg:py-3 px-3'>
-                        <a href='javascript:void(0)'
-                            class='hover:text-[#007bff]  block font-semibold text-xl'>Ana səhifə
-                        </a>
-                    </li>
-                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='page/Haqqimizda.htm'
-                            class='hover:text-[#007bff] text-black block font-semibold text-xl'>Haqqimizda</a>
-                    </li>
-                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='page/partyor.htm'
-                            class='hover:text-[#007bff] text-black block font-semibold text-xl'>Partnyorlar
-                        </a>
-                    </li>
-                 
-                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='page/Xidmetler.htm'
-                            class='hover:text-[#007bff] text-black block font-semibold text-xl'>Xidmətlər</a>
-                    </li>
-                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='page/Elaqe.htm'
-                            class='hover:text-[#007bff] text-black block font-semibold text-xl'>Əlaqə</a>
-                    </li>
-                </ul>
+      <div class='flex ml-auto'>
+        <button onclick="openhesab()"
+          class='px-2 h-[30px] lg:text-[15px]  text-[14px] rounded-sm  text-white border-2 border-[#007bff] bg-[#007bff] hover:bg-[#004bff]'>
+          <span><i class="fa-solid fa-user"></i> Hesabım</span></button>
+        <div id="toggleOpen" class='flex ml-auto lg:hidden'>
+          <button class='ml-6'>
+            <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <main>
+<section class="hero">
+  <div class="pt-12 pb-12 relative w-[95%] mx-auto ">
+    <div class="relative xl:container m-auto px-6 md:px-3 lg:px-3">
+      <h1 class="sm:mx-auto font-black text-blue-900 text-2xl text-center sm:text-3xl md:text-4xl lg:w-auto lg:text-left xl:text-5xl dark:text-white">
+        Sürətin və Etibarlılığın Adı  <br class="lg:block hidden"> 
+        <span class="relative text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-400 dark:from-orange-400 dark:to-yellow-300">MonoKuryer</span>.
+
+      </h1>
+      
+        <div class="lg:flex">
+            <div class="relative mt-8 md:mt-16 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto text-center lg:text-left lg:mr-auto lg:w-7/12">
+              <p class="sm:text-lg text-gray-700 dark:text-gray-300 lg:w-11/12">
+                MonoKuryer çatdırılma və əməkdaşlıq sahəsində yeni bir səviyyə yaradır: sürətli çatdırılma, etibarlı xidmət, müştəri məmnuniyyəti, həmçinin biznesiniz üçün ən yaxşı həllər!
+            </p>
+            
+                <span class="block font-semibold text-gray-500 dark:text-gray-400">  Bizimlə sosial mediada əlaqə saxlayın və bizi izləyin</span>
+                <div class="grid grid-cols-3 space-x-4 md:space-x-6 md:flex md:justify-center lg:justify-start">
+                    <a aria-label="add to slack" href="https://www.instagram.com/monokuryerrr/?utm_source=qr&igsh=MWl3cXloY2lpcXZidw%3D%3D" class="p-4 border border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-full duration-300 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-600/20 dark:hover:border-cyan-300/30">
+                        <div class="flex justify-center space-x-4">
+                            <img class="w-6 h-6" src="img/icons/instagram.png" alt="slack logo" loading="lazy" width="128" height="128">
+                            <span class="hidden font-medium md:block dark:text-white">İnstagram izlə</span>
+                        </div>
+                    </a>    
+                    <a aria-label="add to chat" href="https://www.tiktok.com/@monokuryer.az?_t=8orNTnC6Buc&_r=1" class="p-4 border border-gray-200 dark:bg-gray-800  dark:border-gray-700 rounded-full duration-300 hover:border-green-400 hover:shadow-lg hover:shadow-lime-600/20 dark:hover:border-green-300/30">
+                        <div class="flex justify-center space-x-4">
+                            <img class="w-6 h-6" src="img/icons/tik-tok.png" alt="chat logo" loading="lazy" width="128" height="128">
+                            <span class="hidden font-medium md:block dark:text-white">Tiktokda izlə</span>
+                        </div>
+                    </a>   
+                    <a aria-label="add to zoom" href="https://wa.me/994553010601" class="p-4 border border-gray-200 dark:bg-gray-800  dark:border-gray-700 rounded-full duration-300 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-600/20 dark:hover:border-blue-300/30">
+                        <div class="flex justify-center space-x-4">
+                            <img class="w-6 h-6" src="img/icons/whatsapp.png" alt="chat logo" loading="lazy" width="128" height="128">
+                            <span class="hidden font-medium md:block dark:text-white">Indi mesaj göndərin</span>
+                        </div>
+                    </a>    
+                </div>
+
+                <div class="dark:text-gray-300">
+                    🔥🌟 
+                    <span>Elə indi üzv olun və hesabınızı yaradın:</span>  
+                    <a href="page/registr.htm" class="font-semibold text-gray-700 dark:text-gray-200 hover:underline">Hesab yarat</a>, 
+                    <a onclick="openhesab()" class="font-semibold text-gray-700 dark:text-gray-200 hover:underline">Giriş et</a>.
+                    
+                </div>
+
+                <div class="pt-12 flex gap-6 lg:gap-12 justify-between grayscale lg:w-2/3 xl:hidden lg:hidden">
+                    <img src="img/icons/box.png" class="h-8 sm:h-10 w-auto lg:h-12" alt="" />
+                    <img src="img/icons/hand.png" class="h-8 sm:h-10 w-auto lg:h-12" alt="" />
+                    <img src="img//icons/courier.png" class="h-8 sm:h-10 w-auto lg:h-12" alt="" />
+                    <img src="img//icons/door-to-door.png" class="h-8 sm:h-10 w-auto lg:h-12" alt="" />
+                </div>
             </div>
-
-            <div class='flex ml-auto'>
-              <button onclick="openhesab()" class='px-2 h-[30px] lg:text-[15px]  text-[14px] rounded-sm  text-white border-2 border-[#007bff] bg-[#007bff] hover:bg-[#004bff]'>  <span><i class="fa-solid fa-user"></i> Hesabım</span></button>
-                <div id="toggleOpen" class='flex ml-auto lg:hidden'>
-                    <button class='ml-6'>
-                        <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                    </button>
+            <div class="mt-12 md:mt-0 lg:absolute -right-10">
+                <div class="relative lg:w-[65%] xl:w-full mx-auto">
+                    <div aria-hidden="true" class="absolute scale-75 md:scale-110 inset-0 m-auto w-[55%] h-full md:w-44 md:h-44 rounded-full rotate-45 bg-gradient-to-r from-sky-500 to-cyan-300 blur-3xl"></div>
+                    <img src="img/gallery/kuryer-1.jpg" class="relative w-full" alt="wath illustration" loading="lazy" >
                 </div>
             </div>
         </div>
-
-    </header>
-    <main>
-        
-<section id="cabinet">
-  
-  <div id="loginpanel" style="display: none;" class="fixed inset-0 p-4 flex flex-wrap justify-center items-center w-full h-full z-[1000] before:fixed before:inset-0 before:w-full before:h-full before:bg-[rgba(0,0,0,0.5)] overflow-auto ">
-    <div class="w-full max-w-lg bg-white shadow-lg rounded-lg p-6 relative">
-        <div class="flex items-center pb-3 border-b border-gray-300">
-            <h3 class="text-gray-800 text-xl font-bold flex-1">Hesaba daxil ol</h3>
-        <button onclick="closehesab()">
-          <svg  xmlns="http://www.w3.org/2000/svg" class="w-3 ml-2 cursor-pointer shrink-0 fill-gray-400 hover:fill-red-500"
-          viewBox="0 0 320.591 320.591">
-          <path
-              d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
-              data-original="#000000"></path>
-          <path
-              d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
-              data-original="#000000"></path>
-      </svg>
-        </button>
-        </div>
-
-        <div class="border-t border-gray-300 pt-6 flex justify-center gap-4">
-        
-          <button 
-              class="px-4 py-2 rounded-lg text-white text-sm font-medium border-none outline-none tracking-wide bg-blue-600 hover:bg-blue-700 active:bg-blue-600">Qeydiyyatdan keç</button>
-      </div>
-      <form class="mt-8 space-y-4">
-        <div>
-          <label class="text-gray-800 text-sm mb-2 block">İstifadəçi adı və ya Mağaza adı</label>
-          <div class="relative flex items-center">
-            <input name="username" type="text" required class="w-full text-gray-800 text-sm border border-gray-300 px-4 py-3 rounded-md outline-blue-600" placeholder=" İstifadəçi adı və ya Mağaza adı" />
-            <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-4 h-4 absolute right-4" viewBox="0 0 24 24">
-              <circle cx="10" cy="7" r="6" data-original="#000000"></circle>
-              <path d="M14 15H6a5 5 0 0 0-5 5 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 5 5 0 0 0-5-5zm8-4h-2.59l.3-.29a1 1 0 0 0-1.42-1.42l-2 2a1 1 0 0 0 0 1.42l2 2a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42l-.3-.29H22a1 1 0 0 0 0-2z" data-original="#000000"></path>
-            </svg>
-          </div>
-        </div>
-
-        <div>
-          <label class="text-gray-800 text-sm mb-2 block">Şifrə</label>
-          <div class="relative flex items-center">
-            <input id="passvisb" name="password" type="password" required class="w-full text-gray-800 text-sm border border-gray-300 px-4 py-3 rounded-md outline-blue-600" placeholder="Şifrə" />
-           <img onclick="changepasvisb()" id="imgvisb" src="img/hide.png" alt="view" class="w-4 h-4 absolute right-4 cursor-pointer" >
-          </div>
-        </div>
-
-        <div class="flex flex-wrap items-center justify-between gap-4">
-          <div class="flex items-center">
-            <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 shrink-0 text-blue-600 focus:ring-blue-500 border-gray-300 rounded" />
-            <label for="remember-me" class="ml-3 block text-sm text-gray-800">
-             Məni yadda saxla
-            </label>
-          </div>
-          <div class="text-sm">
-            <a href="jajvascript:void(0);" class="text-blue-600 hover:underline font-semibold">
-             Şifrəni unutdum?
-            </a>
-          </div>
-        </div>
-
-        <div class="!mt-8">
-          <button   class="px-4 py-2 rounded-lg text-white font-medium text-sm border-none outline-none tracking-wide bg-orange-400 hover:bg-blue-700 active:bg-gray-200">Giriş et</button>
-        </div>
-        <p class="text-gray-800 text-sm !mt-8 text-center">Hesabınız yoxdur ? Elə indi qeydiyyatdan keçin <a href="page/registr.htm" class="text-blue-600 hover:underline ml-1 whitespace-nowrap font-semibold">Qeydiyyat keç</a></p>
-      </form>
-       
-      
     </div>
-</div>
-<div id="regstrpage" style="display: none;" class="fixed inset-0  p-4 flex flex-wrap justify-center items-center w-full h-full z-[1000] before:fixed before:inset-0 before:w-full before:h-full before:bg-[rgba(0,0,0,0.5)] overflow-auto ">
-  <div class="w-full flex flex-col xl:flex-row bg-white shadow-lg rounded-lg relative">
-    <!-- Sol Panel (Şərtlər) -->
-    <div class="flex flex-col justify-center p-8 bg-gradient-to-r from-blue-600 to-blue-700 w-full xl:w-[50%] h-full space-y-4">
-      <h4 class="text-white text-2xl font-semibold leading-tight">MonoKuryer.az-da Qeydiyyat</h4>
-      <p class="text-md text-white mt-2">
-        MonoKuryer.az ailəsinin üzvü olmaq üçün aşağıdakı şərtlər tələb olunur:
-      </p>
-      <div class="space-y-3">
-        <p class="text-white text-sm font-semibold">• Məsuliyyətli, stresədavamlı və intizamlı olmaq.</p>
-        <p class="text-white text-sm font-semibold">• Şəhəri və onun əsas mərkəzlərini yaxşı tanımaq.</p>
-        <p class="text-white text-sm font-semibold">• Kollektivdə işləmək bacarığına malik olmaq.</p>
-        <p class="text-white text-sm font-semibold">• Velosiped, moped, motosiklet sürmək arzuolunandır.</p>
-      </div>
-    </div>
-  
-    <!-- Sağ Panel (Form) -->
-    <form class="flex flex-col sm:p-8 p-4 xl:w-[50%] w-full">
-      <div class="closed flex items-end justify-end">
-        <button onclick="closehesab()">
-          <svg  xmlns="http://www.w3.org/2000/svg" class="w-3 ml-2 cursor-pointer shrink-0 fill-gray-400 hover:fill-red-500"
-          viewBox="0 0 320.591 320.591">
-          <path
-              d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
-              data-original="#000000"></path>
-          <path
-              d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
-              data-original="#000000"></path>
-      </svg>
-        </button>
-      </div>
-      <div class="mb-12">
-        <h3 class="text-blue-500 text-2xl font-extrabold text-center">Qeydiyyat (Kuryer ol)</h3>
-      </div>
-  
-      <div class="grid lg:grid-cols-2 gap-6 mb-6">
-        <!-- Ad, Soyad, Ata adı -->
-        <div>
-          <label class="text-gray-800 text-sm mb-2 block">Ad, Soyad, Ata adı</label>
-          <input name="name" type="text" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Bura daxil edin" />
-        </div>
-  
-        <!-- E-poçt -->
-        <div>
-          <label class="text-gray-800 text-sm mb-2 block">E-poçt</label>
-          <input name="email" type="email" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Bura daxil edin" />
-        </div>
-  
-        <!-- Şifrə -->
-        <div>
-          <label class="text-gray-800 text-sm mb-2 block">Şifrə</label>
-          <input name="password" type="password" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Bura daxil edin" />
-        </div>
-  
-        <!-- Telefon -->
-        <div>
-          <label class="text-gray-800 text-sm mb-2 block">Telefon</label>
-          <input name="number" type="tel" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Bura daxil edin" />
-        </div>
-  
-        <!-- Qeydiyyat Ünvanı -->
-        <div>
-          <label class="text-gray-800 text-sm mb-2 block">Qeydiyyat Ünvanı</label>
-          <input name="address" type="text" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Bura daxil edin" />
-        </div>
-  
-        <!-- Faktiki Yaşadığı Ünvan -->
-        <div>
-          <label class="text-gray-800 text-sm mb-2 block">Faktiki Yaşadığı Ünvan</label>
-          <input name="current_address" type="text" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Bura daxil edin" />
-        </div>
-  
-        <!-- Qohum nömrəsi -->
-        <div>
-          <label class="text-gray-800 text-sm mb-2 block">Birinci dərəcəli Qohum nömrəsi</label>
-          <input name="relative_number" type="text" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Bura daxil edin" />
-        </div>
-  
-        <!-- Ş/V seriya nömrəsi -->
-        <div>
-          <label class="text-gray-800 text-sm mb-2 block">Ş/V seriya nömrəsi</label>
-          <input name="id_number" type="text" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Bura daxil edin" />
-        </div>
-  
-        <!-- Ş/V Fin kodu -->
-        <div>
-          <label class="text-gray-800 text-sm mb-2 block">Ş/V Fin kodu</label>
-          <input name="fin_code" type="text" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Bura daxil edin" />
-        </div>
-  
-        <!-- Təcrübə -->
-        <div>
-          <label class="text-gray-800 text-sm mb-2 block">Təcrübə</label>
-          <select name="experience" class="bg-slate-200 w-full p-2 my-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-            <option value="">Seçin</option>
-            <option value="Təcrübəyoxdur">Təcrübəm yoxdur</option>
-            <option value="3ay">3 ay</option>
-            <option value="6ay">6 ay</option>
-            <option value="12ay">12 ay</option>
-            <option value="1-3il">1-3 il</option>
-            <option value="3-5il">3-5 il</option>
-            <option value="5ilden_artiq">5 ildən artıq</option>
-          </select>
-        </div>
-  
-        <!-- Cinsiyyət -->
-        <div>
-          <label class="text-gray-800 text-sm mb-2 block">Cinsiyyət</label>
-          <select name="gender" class="bg-slate-200 w-full p-2 my-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-            <option value="">Seçin</option>
-            <option value="female">Xanım</option>
-            <option value="male">Bəy</option>
-          </select>
-        </div>
-  
-        <!-- Əlavə məlumatlar -->
-        <div>
-          <label class="text-gray-800 text-sm mb-2 block">Əlavə məlumatlar</label>
-          <textarea name="message" rows="3" class="w-full bg-gray-100 rounded px-6 text-sm pt-3 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Mesajınızı buraya yazın"></textarea>
-        </div>
-      </div>
-  
-      <!-- Şərt qəbul et -->
-      <div class="flex items-center mt-6">
-        <input id="accept-terms" name="accept-terms" type="checkbox" class="h-4 w-4 shrink-0 rounded" required />
-        <label for="accept-terms" class="ml-3 block text-sm text-blue-500 font-semibold hover:underline">
-          Yuxarıdakı bütün məlumatları doldurdum və şərtləri qəbul edirəm
-        </label>
-      </div>
-  
-      <!-- Düymələr -->
-      <div class="mt-6 space-y-4">
-        <button type="submit" class="py-2 px-4 text-sm tracking-wide font-semibold rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none transition-all w-full">
-          Qeydiyyatdan Keç
-        </button>
-        <button type="button" class="py-2 px-4 text-sm tracking-wide font-semibold rounded-md text-white bg-orange-400 hover:bg-orange-600 focus:outline-none transition-all w-full">
-          Giriş Et səhifəsinə Geri Qayıt
-        </button>
-      </div>
-    </form>
-  </div>
-  
 </div>
 </section>
+    <section id="cabinet">
 
-<section class="service">
-   
-    <div class="max-w-[95%] mx-auto  p-4">
+      <div id="loginpanel" style="display: none;"
+        class="fixed inset-0 p-4 flex flex-wrap justify-center items-center w-full h-full z-[1000] before:fixed before:inset-0 before:w-full before:h-full before:bg-[rgba(0,0,0,0.5)] overflow-auto ">
+        <div class="w-full max-w-lg bg-white shadow-lg rounded-lg p-6 relative">
+          <div class="flex items-center pb-3 border-b border-gray-300">
+            <h3 class="text-gray-800 text-xl font-bold flex-1">Hesaba daxil ol</h3>
+            <button onclick="closehesab()">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="w-3 ml-2 cursor-pointer shrink-0 fill-gray-400 hover:fill-red-500" viewBox="0 0 320.591 320.591">
+                <path
+                  d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                  data-original="#000000"></path>
+                <path
+                  d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                  data-original="#000000"></path>
+              </svg>
+            </button>
+          </div>
+
+          
+          <form class="mt-8 space-y-4">
+            <div>
+              <label class="text-gray-800 text-sm mb-2 block">İstifadəçi adı və ya Mağaza adı</label>
+              <div class="relative flex items-center">
+                <input name="username" type="text" required
+                  class="w-full text-gray-800 text-sm border border-gray-300 px-4 py-3 rounded-md outline-blue-600"
+                  placeholder=" İstifadəçi adı və ya Mağaza adı" />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-4 h-4 absolute right-4"
+                  viewBox="0 0 24 24">
+                  <circle cx="10" cy="7" r="6" data-original="#000000"></circle>
+                  <path
+                    d="M14 15H6a5 5 0 0 0-5 5 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 5 5 0 0 0-5-5zm8-4h-2.59l.3-.29a1 1 0 0 0-1.42-1.42l-2 2a1 1 0 0 0 0 1.42l2 2a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42l-.3-.29H22a1 1 0 0 0 0-2z"
+                    data-original="#000000"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div>
+              <label class="text-gray-800 text-sm mb-2 block">Şifrə</label>
+              <div class="relative flex items-center">
+                <input id="passvisb" name="password" type="password" required
+                  class="w-full text-gray-800 text-sm border border-gray-300 px-4 py-3 rounded-md outline-blue-600"
+                  placeholder="Şifrə" />
+                <img onclick="changepasvisb()" id="imgvisb" src="img/hide.png" alt="view"
+                  class="w-4 h-4 absolute right-4 cursor-pointer">
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-between gap-4">
+              <div class="flex items-center">
+                <input id="remember-me" name="remember-me" type="checkbox"
+                  class="h-4 w-4 shrink-0 text-blue-600 focus:ring-blue-500 border-gray-300 rounded" />
+                <label for="remember-me" class="ml-3 block text-sm text-gray-800">
+                  Məni yadda saxla
+                </label>
+              </div>
+              <div class="text-sm">
+                <a href="jajvascript:void(0);" class="text-blue-600 hover:underline font-semibold">
+                  Şifrəni unutdum?
+                </a>
+              </div>
+            </div>
+
+            <div class="!mt-8">
+              <button
+                class="px-4 py-2 rounded-lg text-white font-medium text-sm border-none outline-none tracking-wide bg-orange-400 hover:bg-blue-700 active:bg-gray-200">Giriş
+                et</button>
+            </div>
+            <p class="text-gray-800 text-sm !mt-8 text-center">Hesabınız yoxdur ? Elə indi qeydiyyatdan keçin <a
+                href="page/registr.htm"
+                class="text-blue-600 hover:underline ml-1 whitespace-nowrap font-semibold">Qeydiyyat keç</a></p>
+          </form>
+
+
+        </div>
+      </div>
+      <div id="regstrpage" style="display: none;"
+        class="fixed inset-0  p-4 flex flex-wrap justify-center items-center w-full h-full z-[1000] before:fixed before:inset-0 before:w-full before:h-full before:bg-[rgba(0,0,0,0.5)] overflow-auto ">
+        <div class="w-full flex flex-col xl:flex-row bg-white shadow-lg rounded-lg relative">
+          <!-- Sol Panel (Şərtlər) -->
+          <div
+            class="flex flex-col justify-center p-8 bg-gradient-to-r from-blue-600 to-blue-700 w-full xl:w-[50%] h-full space-y-4">
+            <h4 class="text-white text-2xl font-semibold leading-tight">MonoKuryer.az-da Qeydiyyat</h4>
+            <p class="text-md text-white mt-2">
+              MonoKuryer.az ailəsinin üzvü olmaq üçün aşağıdakı şərtlər tələb olunur:
+            </p>
+            <div class="space-y-3">
+              <p class="text-white text-sm font-semibold">• Məsuliyyətli, stresədavamlı və intizamlı olmaq.</p>
+              <p class="text-white text-sm font-semibold">• Şəhəri və onun əsas mərkəzlərini yaxşı tanımaq.</p>
+              <p class="text-white text-sm font-semibold">• Kollektivdə işləmək bacarığına malik olmaq.</p>
+              <p class="text-white text-sm font-semibold">• Velosiped, moped, motosiklet sürmək arzuolunandır.</p>
+            </div>
+          </div>
+
+          <!-- Sağ Panel (Form) -->
+          <form class="flex flex-col sm:p-8 p-4 xl:w-[50%] w-full">
+            <div class="closed flex items-end justify-end">
+              <button onclick="closehesab()">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  class="w-3 ml-2 cursor-pointer shrink-0 fill-gray-400 hover:fill-red-500"
+                  viewBox="0 0 320.591 320.591">
+                  <path
+                    d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                    data-original="#000000"></path>
+                  <path
+                    d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                    data-original="#000000"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="mb-12">
+              <h3 class="text-blue-500 text-2xl font-extrabold text-center">Qeydiyyat (Kuryer ol)</h3>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-6 mb-6">
+              <!-- Ad, Soyad, Ata adı -->
+              <div>
+                <label class="text-gray-800 text-sm mb-2 block">Ad, Soyad, Ata adı</label>
+                <input name="name" type="text"
+                  class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Bura daxil edin" />
+              </div>
+
+              <!-- E-poçt -->
+              <div>
+                <label class="text-gray-800 text-sm mb-2 block">E-poçt</label>
+                <input name="email" type="email"
+                  class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Bura daxil edin" />
+              </div>
+
+              <!-- Şifrə -->
+              <div>
+                <label class="text-gray-800 text-sm mb-2 block">Şifrə</label>
+                <input name="password" type="password"
+                  class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Bura daxil edin" />
+              </div>
+
+              <!-- Telefon -->
+              <div>
+                <label class="text-gray-800 text-sm mb-2 block">Telefon</label>
+                <input name="number" type="tel"
+                  class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Bura daxil edin" />
+              </div>
+
+              <!-- Qeydiyyat Ünvanı -->
+              <div>
+                <label class="text-gray-800 text-sm mb-2 block">Qeydiyyat Ünvanı</label>
+                <input name="address" type="text"
+                  class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Bura daxil edin" />
+              </div>
+
+              <!-- Faktiki Yaşadığı Ünvan -->
+              <div>
+                <label class="text-gray-800 text-sm mb-2 block">Faktiki Yaşadığı Ünvan</label>
+                <input name="current_address" type="text"
+                  class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Bura daxil edin" />
+              </div>
+
+              <!-- Qohum nömrəsi -->
+              <div>
+                <label class="text-gray-800 text-sm mb-2 block">Birinci dərəcəli Qohum nömrəsi</label>
+                <input name="relative_number" type="text"
+                  class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Bura daxil edin" />
+              </div>
+
+              <!-- Ş/V seriya nömrəsi -->
+              <div>
+                <label class="text-gray-800 text-sm mb-2 block">Ş/V seriya nömrəsi</label>
+                <input name="id_number" type="text"
+                  class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Bura daxil edin" />
+              </div>
+
+              <!-- Ş/V Fin kodu -->
+              <div>
+                <label class="text-gray-800 text-sm mb-2 block">Ş/V Fin kodu</label>
+                <input name="fin_code" type="text"
+                  class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Bura daxil edin" />
+              </div>
+
+              <!-- Təcrübə -->
+              <div>
+                <label class="text-gray-800 text-sm mb-2 block">Təcrübə</label>
+                <select name="experience"
+                  class="bg-slate-200 w-full p-2 my-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  <option value="">Seçin</option>
+                  <option value="Təcrübəyoxdur">Təcrübəm yoxdur</option>
+                  <option value="3ay">3 ay</option>
+                  <option value="6ay">6 ay</option>
+                  <option value="12ay">12 ay</option>
+                  <option value="1-3il">1-3 il</option>
+                  <option value="3-5il">3-5 il</option>
+                  <option value="5ilden_artiq">5 ildən artıq</option>
+                </select>
+              </div>
+
+              <!-- Cinsiyyət -->
+              <div>
+                <label class="text-gray-800 text-sm mb-2 block">Cinsiyyət</label>
+                <select name="gender"
+                  class="bg-slate-200 w-full p-2 my-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  <option value="">Seçin</option>
+                  <option value="female">Xanım</option>
+                  <option value="male">Bəy</option>
+                </select>
+              </div>
+
+              <!-- Əlavə məlumatlar -->
+              <div>
+                <label class="text-gray-800 text-sm mb-2 block">Əlavə məlumatlar</label>
+                <textarea name="message" rows="3"
+                  class="w-full bg-gray-100 rounded px-6 text-sm pt-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Mesajınızı buraya yazın"></textarea>
+              </div>
+            </div>
+
+            <!-- Şərt qəbul et -->
+            <div class="flex items-center mt-6">
+              <input id="accept-terms" name="accept-terms" type="checkbox" class="h-4 w-4 shrink-0 rounded" required />
+              <label for="accept-terms" class="ml-3 block text-sm text-blue-500 font-semibold hover:underline">
+                Yuxarıdakı bütün məlumatları doldurdum və şərtləri qəbul edirəm
+              </label>
+            </div>
+
+            <!-- Düymələr -->
+            <div class="mt-6 space-y-4">
+              <button type="submit"
+                class="py-2 px-4 text-sm tracking-wide font-semibold rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none transition-all w-full">
+                Qeydiyyatdan Keç
+              </button>
+              <button type="button"
+                class="py-2 px-4 text-sm tracking-wide font-semibold rounded-md text-white bg-orange-400 hover:bg-orange-600 focus:outline-none transition-all w-full">
+                Giriş Et səhifəsinə Geri Qayıt
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="service">
+
+      <div class="max-w-[95%] mx-auto  p-4">
         <div class="text-center max-w-2xl mx-auto">
           <h2 class="text-gray-800 sm:text-3xl text-2xl font-extrabold"> Xidmətlərimiz</h2>
-    
+
         </div>
-  
+
         <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mt-12 max-md:max-w-lg mx-auto">
-          <div class="bg-white text-left border border-gray-300 rounded-md p-6 hover:shadow-md hover:bg-[#FFA726] transition-all">
+          <div
+            class="bg-white text-left border border-gray-300 rounded-md p-6 hover:shadow-md hover:bg-[#FFA726] transition-all">
             <img src="img/icons/letter.svg" class="w-20 mb-2 object-cover" alt="Zərf (məktub) çatdırılma">
             <h3 class="text-gray-800 text-xl font-semibold mb-3">Zərf (məktub) çatdırılma</h3>
-            <p class="text-gray-600 text-xl">MonoKuryer.az - xəbər gətirir. Korporativ müştərilər üçün zərf və məktubların çatdırılması xidməti təklif edirik.</p>
-            <button type="button" class="border border-gray-300 text-gray-800 px-4 py-2 rounded-md font-semibold flex items-center text-sm mt-6 hover:bg-gray-50">
-              Daha çoxu <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" class="rotate-90 ml-1.5"><path fill="#333" d="M12.006 1a1 1 0 0 1 .838.463l7 11a1 1 0 0 1-.985 1.527l-3.364-.48a.434.434 0 0 0-.495.43V20c0 1.645-1.355 3-3 3s-3-1.355-3-3v-6.06a.434.434 0 0 0-.495-.43l-3.364.48a1 1 0 0 1-.985-1.527l7-11a1 1 0 0 1 .85-.463z" data-original="#000000" paint-order="fill markers stroke"></path></svg>
+            <p class="text-gray-600 text-xl">MonoKuryer.az - xəbər gətirir. Korporativ müştərilər üçün zərf və
+              məktubların çatdırılması xidməti təklif edirik.</p>
+            <button type="button"
+              class="border border-gray-300 text-gray-800 px-4 py-2 rounded-md font-semibold flex items-center text-sm mt-6 hover:bg-gray-50">
+              Daha çoxu <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" class="rotate-90 ml-1.5">
+                <path fill="#333"
+                  d="M12.006 1a1 1 0 0 1 .838.463l7 11a1 1 0 0 1-.985 1.527l-3.364-.48a.434.434 0 0 0-.495.43V20c0 1.645-1.355 3-3 3s-3-1.355-3-3v-6.06a.434.434 0 0 0-.495-.43l-3.364.48a1 1 0 0 1-.985-1.527l7-11a1 1 0 0 1 .85-.463z"
+                  data-original="#000000" paint-order="fill markers stroke"></path>
+              </svg>
             </button>
           </div>
-  
-          <div class="bg-white text-left border border-gray-300 rounded-md p-6  hover:bg-[#FFA726] hover:shadow-md transition-all">
-            <img src="img/icons/jewelry-store-svgrepo-com.svg"  class="w-20 mb-2 object-cover" alt="Zinət əşyaları">
+
+          <div
+            class="bg-white text-left border border-gray-300 rounded-md p-6  hover:bg-[#FFA726] hover:shadow-md transition-all">
+            <img src="img/icons/jewelry-store-svgrepo-com.svg" class="w-20 mb-2 object-cover" alt="Zinət əşyaları">
             <h3 class="text-gray-800 text-xl font-semibold mb-3">Zinət əşyalarının çatdırılması</h3>
-            <p class="text-gray-600 text-xl">MonoKuryer.az - dəyər gətirir. Bəzək və zinət əşyalarını Bakının istənilən nöqtəsinə çatdırır..</p>
-            <button type="button" class="border border-gray-300 text-gray-800 px-4 py-2 rounded-md font-semibold flex items-center text-sm mt-6 hover:bg-gray-50">
-              Daha çoxu <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" class="rotate-90 ml-1.5"><path fill="#333" d="M12.006 1a1 1 0 0 1 .838.463l7 11a1 1 0 0 1-.985 1.527l-3.364-.48a.434.434 0 0 0-.495.43V20c0 1.645-1.355 3-3 3s-3-1.355-3-3v-6.06a.434.434 0 0 0-.495-.43l-3.364.48a1 1 0 0 1-.985-1.527l7-11a1 1 0 0 1 .85-.463z" data-original="#000000" paint-order="fill markers stroke"></path></svg>
+            <p class="text-gray-600 text-xl">MonoKuryer.az - dəyər gətirir. Bəzək və zinət əşyalarını Bakının istənilən
+              nöqtəsinə çatdırır..</p>
+            <button type="button"
+              class="border border-gray-300 text-gray-800 px-4 py-2 rounded-md font-semibold flex items-center text-sm mt-6 hover:bg-gray-50">
+              Daha çoxu <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" class="rotate-90 ml-1.5">
+                <path fill="#333"
+                  d="M12.006 1a1 1 0 0 1 .838.463l7 11a1 1 0 0 1-.985 1.527l-3.364-.48a.434.434 0 0 0-.495.43V20c0 1.645-1.355 3-3 3s-3-1.355-3-3v-6.06a.434.434 0 0 0-.495-.43l-3.364.48a1 1 0 0 1-.985-1.527l7-11a1 1 0 0 1 .85-.463z"
+                  data-original="#000000" paint-order="fill markers stroke"></path>
+              </svg>
             </button>
           </div>
-  
-          <div class="bg-white text-left border border-gray-300  hover:bg-[#FFA726] rounded-md p-6 hover:shadow-md transition-all">
-           <img src="img/icons/market-basket-svgrepo-com.svg"  class="w-20 mb-2 object-cover" alt="Mağazalardan çatdırılma">
+
+          <div
+            class="bg-white text-left border border-gray-300  hover:bg-[#FFA726] rounded-md p-6 hover:shadow-md transition-all">
+            <img src="img/icons/market-basket-svgrepo-com.svg" class="w-20 mb-2 object-cover"
+              alt="Mağazalardan çatdırılma">
             <h3 class="text-gray-800 text-xl font-semibold mb-3">Mağazalardan çatdırılma</h3>
-            <p class="text-gray-600 text-xl">MonoKuryer.az - mağazadan birbaşa qapına! Mağazalardan ünvana çatdırılmada MonoKuryer.az sifariş edərək vaxta və enerjiyə qənaət etmək olar..</p>
-            <button type="button" class="border border-gray-300 text-gray-800 px-4 py-2 rounded-md font-semibold flex items-center text-sm mt-6 hover:bg-gray-50">
-             Daha çoxu <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" class="rotate-90 ml-1.5"><path fill="#333" d="M12.006 1a1 1 0 0 1 .838.463l7 11a1 1 0 0 1-.985 1.527l-3.364-.48a.434.434 0 0 0-.495.43V20c0 1.645-1.355 3-3 3s-3-1.355-3-3v-6.06a.434.434 0 0 0-.495-.43l-3.364.48a1 1 0 0 1-.985-1.527l7-11a1 1 0 0 1 .85-.463z" data-original="#000000" paint-order="fill markers stroke"></path></svg>
+            <p class="text-gray-600 text-xl">MonoKuryer.az - mağazadan birbaşa qapına! Mağazalardan ünvana çatdırılmada
+              MonoKuryer.az sifariş edərək vaxta və enerjiyə qənaət etmək olar..</p>
+            <button type="button"
+              class="border border-gray-300 text-gray-800 px-4 py-2 rounded-md font-semibold flex items-center text-sm mt-6 hover:bg-gray-50">
+              Daha çoxu <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" class="rotate-90 ml-1.5">
+                <path fill="#333"
+                  d="M12.006 1a1 1 0 0 1 .838.463l7 11a1 1 0 0 1-.985 1.527l-3.364-.48a.434.434 0 0 0-.495.43V20c0 1.645-1.355 3-3 3s-3-1.355-3-3v-6.06a.434.434 0 0 0-.495-.43l-3.364.48a1 1 0 0 1-.985-1.527l7-11a1 1 0 0 1 .85-.463z"
+                  data-original="#000000" paint-order="fill markers stroke"></path>
+              </svg>
             </button>
           </div>
-  
-          <div class="bg-white text-left border border-gray-300 hover:bg-[#FFA726]  rounded-md p-6 hover:shadow-md transition-all">
-           <img src="img/icons/buket.svg" class="w-20 mb-2 object-cover"  alt="Gül buketlərini">
+
+          <div
+            class="bg-white text-left border border-gray-300 hover:bg-[#FFA726]  rounded-md p-6 hover:shadow-md transition-all">
+            <img src="img/icons/buket.svg" class="w-20 mb-2 object-cover" alt="Gül buketlərini">
             <h3 class="text-gray-800 text-xl font-semibold mb-3">Gül buketlərinin çatdırılması</h3>
-            <p class="text-gray-600 text-xl">MonoKuryer.az - sevgi çatdırır. Təravətli və gözəl ətirli çiçəklərdən yığılan gül buketlərini vaxtında istənilən ünvana təhvil verir..</p>
-            <button type="button" class="border border-gray-300 text-gray-800 px-4 py-2 rounded-md font-semibold flex items-center text-sm mt-6 hover:bg-gray-50">
-             Daha çoxu <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" class="rotate-90 ml-1.5"><path fill="#333" d="M12.006 1a1 1 0 0 1 .838.463l7 11a1 1 0 0 1-.985 1.527l-3.364-.48a.434.434 0 0 0-.495.43V20c0 1.645-1.355 3-3 3s-3-1.355-3-3v-6.06a.434.434 0 0 0-.495-.43l-3.364.48a1 1 0 0 1-.985-1.527l7-11a1 1 0 0 1 .85-.463z" data-original="#000000" paint-order="fill markers stroke"></path></svg>
+            <p class="text-gray-600 text-xl">MonoKuryer.az - sevgi çatdırır. Təravətli və gözəl ətirli çiçəklərdən
+              yığılan gül buketlərini vaxtında istənilən ünvana təhvil verir..</p>
+            <button type="button"
+              class="border border-gray-300 text-gray-800 px-4 py-2 rounded-md font-semibold flex items-center text-sm mt-6 hover:bg-gray-50">
+              Daha çoxu <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" class="rotate-90 ml-1.5">
+                <path fill="#333"
+                  d="M12.006 1a1 1 0 0 1 .838.463l7 11a1 1 0 0 1-.985 1.527l-3.364-.48a.434.434 0 0 0-.495.43V20c0 1.645-1.355 3-3 3s-3-1.355-3-3v-6.06a.434.434 0 0 0-.495-.43l-3.364.48a1 1 0 0 1-.985-1.527l7-11a1 1 0 0 1 .85-.463z"
+                  data-original="#000000" paint-order="fill markers stroke"></path>
+              </svg>
             </button>
           </div>
-  
-          <div class="bg-white text-left border border-gray-300  hover:bg-[#FFA726]  rounded-md p-6 hover:shadow-md transition-all">
-           <img src="img/icons/gifts-svgrepo-com.svg"  class="w-20 mb-2 object-cover" alt="Hədiyyələr">
+
+          <div
+            class="bg-white text-left border border-gray-300  hover:bg-[#FFA726]  rounded-md p-6 hover:shadow-md transition-all">
+            <img src="img/icons/gifts-svgrepo-com.svg" class="w-20 mb-2 object-cover" alt="Hədiyyələr">
             <h3 class="text-gray-800 text-xl  font-semibold mb-3">Hədiyyələrin çatdırılması</h3>
-            <p class="text-gray-600 text-xl">MonoKuryer.az - kiçik sürprizlər gətirir. Sevdiklərinizə ən qısa zamanda hədiyyə paketlərinin (maksimum 40x40) çatdırılmasını həyata keçirir.</p>
-            <button type="button" class="border border-gray-300 text-gray-800 px-4 py-2 rounded-md font-semibold flex items-center text-sm mt-6 hover:bg-gray-50">
-              Daha çoxu <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" class="rotate-90 ml-1.5"><path fill="#333" d="M12.006 1a1 1 0 0 1 .838.463l7 11a1 1 0 0 1-.985 1.527l-3.364-.48a.434.434 0 0 0-.495.43V20c0 1.645-1.355 3-3 3s-3-1.355-3-3v-6.06a.434.434 0 0 0-.495-.43l-3.364.48a1 1 0 0 1-.985-1.527l7-11a1 1 0 0 1 .85-.463z" data-original="#000000" paint-order="fill markers stroke"></path></svg>
+            <p class="text-gray-600 text-xl">MonoKuryer.az - kiçik sürprizlər gətirir. Sevdiklərinizə ən qısa zamanda
+              hədiyyə paketlərinin (maksimum 40x40) çatdırılmasını həyata keçirir.</p>
+            <button type="button"
+              class="border border-gray-300 text-gray-800 px-4 py-2 rounded-md font-semibold flex items-center text-sm mt-6 hover:bg-gray-50">
+              Daha çoxu <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" class="rotate-90 ml-1.5">
+                <path fill="#333"
+                  d="M12.006 1a1 1 0 0 1 .838.463l7 11a1 1 0 0 1-.985 1.527l-3.364-.48a.434.434 0 0 0-.495.43V20c0 1.645-1.355 3-3 3s-3-1.355-3-3v-6.06a.434.434 0 0 0-.495-.43l-3.364.48a1 1 0 0 1-.985-1.527l7-11a1 1 0 0 1 .85-.463z"
+                  data-original="#000000" paint-order="fill markers stroke"></path>
+              </svg>
             </button>
           </div>
 
         </div>
       </div>
-</section>
+    </section>
 
-<section class="qiymet-cedveli">
-    <div class="cedveler">
+    <section class="qiymet-cedveli">
+      <div class="cedveler">
         <table>
           <tr>
             <th>Bakı filialı</th>
@@ -428,127 +565,137 @@
 
         </table>
       </div>
-</section>
+    </section>
 
-<section class="partyorlar mb-12 ">
-    <h2 class="text-3xl font-bold text-center my-5">Bizimlə Partnyorlar</h2>
-   <div class="silder-container overflow-hidden px-12">
-    <div class="slider">
-        <img src="img/gallery/partinoy1 (1).jpeg" alt="Partnyor">
-        <img src="img/gallery/partiniyor2.jpeg" alt="Partnyor">
-        <img src="img/gallery/partinoy1 (3).jpeg" alt="Partnyor">
-        <img src="img/gallery/partinoy1 (4).jpeg" alt="Partnyor">
-        <img src="img/gallery/partinoy1 (5).jpeg" alt="Partnyor">
-        <img src="img/gallery/partinoy1 (6).jpeg" alt="Partnyor">
-        <img src="img/gallery/partinoy1 (7).jpeg" alt="Partnyor">
-        <img src="img/gallery/partinoy1 (8).jpeg" alt="Partnyor">
-        <img src="img/gallery/partinoy1 (9).jpeg" alt="Partnyor">
-        <img src="img/gallery/partinoy1 (10).jpeg" alt="Partnyor">
-        <img src="img/gallery/partinoy1 (11).jpeg" alt="Partnyor">
-        <img src="img/gallery/partinoy1 (12).jpeg" alt="Partnyor">
-        <img src="img/gallery/partinoy1 (13).jpeg" alt="Partnyor">
-        <img src="img/gallery/partyor14.jfif" alt="Partnyor">
-        <img src="img/gallery/partyor15.jfif" alt="Partnyor">
-        <img src="img/gallery/partyor16.jfif" alt="Partnyor">
-        <img src="img/gallery/partyor17.jfif" alt="Partnyor">
-        <img src="img/gallery/partyor18.jfif" alt="Partnyor">
+    <section class="partyorlar mb-12 ">
+      <h2 class="text-3xl font-bold text-center my-5">Bizimlə Partnyorlar</h2>
+      <div class="silder-container overflow-hidden px-12">
+        <div class="slider">
+          <img src="img/gallery/partinoy1 (1).jpeg" alt="Partnyor">
+          <img src="img/gallery/partiniyor2.jpeg" alt="Partnyor">
+          <img src="img/gallery/partinoy1 (3).jpeg" alt="Partnyor">
+          <img src="img/gallery/partinoy1 (4).jpeg" alt="Partnyor">
+          <img src="img/gallery/partinoy1 (5).jpeg" alt="Partnyor">
+          <img src="img/gallery/partinoy1 (6).jpeg" alt="Partnyor">
+          <img src="img/gallery/partinoy1 (7).jpeg" alt="Partnyor">
+          <img src="img/gallery/partinoy1 (8).jpeg" alt="Partnyor">
+          <img src="img/gallery/partinoy1 (9).jpeg" alt="Partnyor">
+          <img src="img/gallery/partinoy1 (10).jpeg" alt="Partnyor">
+          <img src="img/gallery/partinoy1 (11).jpeg" alt="Partnyor">
+          <img src="img/gallery/partinoy1 (12).jpeg" alt="Partnyor">
+          <img src="img/gallery/partinoy1 (13).jpeg" alt="Partnyor">
+          <img src="img/gallery/partyor14.jfif" alt="Partnyor">
+          <img src="img/gallery/partyor15.jfif" alt="Partnyor">
+          <img src="img/gallery/partyor16.jfif" alt="Partnyor">
+          <img src="img/gallery/partyor17.jfif" alt="Partnyor">
+          <img src="img/gallery/partyor18.jfif" alt="Partnyor">
+        </div>
       </div>
-   </div>
 
-</section>
-                   
-    </main>
-    <footer class="font-sans tracking-wide bg-[#213343] py-10 px-10">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div>
-            <h4 class="text-[#FFA726] font-semibold text-lg mb-6">Faydalı linklər</h4>
-            <ul class="space-y-5">
-              <li>
-                <a href="index.htm" class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">Ana səhifə</a>
-              </li>
-              <li>
-                <a href="page/Haqqimizda.htm" class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">Haqqımızda</a>
-              </li>
-              <li>
-                <a href="page/partyor.htm" class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">Partnyorlar</a>
-              </li>
-              <li>
-                <a href="page/Xidmetler.htm" class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">Xidmətlər</a>
-              </li>
-              <li>
-                <a href="page/Elaqe.htm" class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">Əlaqə</a>
-              </li>
-              <li>
-                <a href="page/Kuryerol.htm" class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">Kuryer ol</a>
-              </li>
-            </ul>
-          </div>
-  
-          <div>
-            <h4 class="text-[#FFA726] font-semibold text-lg mb-6">Bunu bilməlisiniz</h4>
-            <ul class="space-y-5">
-              <li>
-                <a href="page/İstifadecirazılasmasi.htm" class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">İstifadəçi razılaşması</a>
-              </li>
-              <li>
-                <a href="page/Dasinmasiqadaqanolanmehsullar.htm" class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">Daşınması qadağan olan məhsullar
-                </a>
-              </li>
-              
-            </ul>
-          </div>
-  
-          <div>
-            <h4 class="text-[#FFA726] font-semibold text-lg mb-6">Bizi sosial şəbəkələrdə izləyin
-            </h4>
-            <ul class="flex items-center justify-start gap-6">
-              <li>
-                <a href="https://www.instagram.com/monokuryerrr/?utm_source=qr&igsh=MWl3cXloY2lpcXZidw%3D%3D" class="hover:text-[#FFA726] text-gray-300 text-[35px] transition-all"><i class="fa-brands fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="https://www.tiktok.com/@monokuryer.az?_t=8orNTnC6Buc&_r=1" class="hover:text-[#FFA726] text-gray-300 text-[30px] transition-all"><i
-                    class="fa-brands fa-tiktok"></i></a>
-              </li>
-              
-              <li>
-                <a  href="https://wa.me/994553010601" class="hover:text-[#FFA726] text-gray-300 text-[30px] transition-all"><i class="fa-brands fa-whatsapp"></i></a>
-              </li>
-            </ul>
-          </div>
-  
-          <div>
-            <h4 class="text-[#FFA726] font-semibold text-lg mb-6">Əlaqə</h4>
-            <ul class="space-y-5">
-             
-              <li>
-                <a href="mailto:Monokuryer.az@gmail.com" class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">Monokuryer.az@gmail.com</a>
-              </li>
-              <li>
-                <a  href="tel:+994553010601" class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">(055) 301 06 01</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-  
-        <div class="border-t text-center border-[#6b5f5f] pt-8 mt-8">
-          <p class="text-gray-300 text-[19px]">
-            © 2024 Copyright: Monokuryer.az
-          </p>
-        </div>
-      </footer>
-    <script src="js/hesab.js"></script>
-    <script src="js/App.js"></script>
-    <script type="text/javascript">
-      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-      (function(){
-      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-      s1.async=true;
-      s1.src='https://embed.tawk.to/66c0ee020cca4f8a7a7729ca/1i5gq3edh';
-      s1.charset='UTF-8';
-      s1.setAttribute('crossorigin','*');
-      s0.parentNode.insertBefore(s1,s0);
-      })();
-      </script>
+    </section>
+
+  </main>
+  <footer class="font-sans tracking-wide bg-[#213343] py-10 px-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <h4 class="text-[#FFA726] font-semibold text-lg mb-6">Faydalı linklər</h4>
+        <ul class="space-y-5">
+          <li>
+            <a href="index.htm" class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">Ana səhifə</a>
+          </li>
+          <li>
+            <a href="page/Haqqimizda.htm"
+              class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">Haqqımızda</a>
+          </li>
+          <li>
+            <a href="page/partyor.htm"
+              class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">Partnyorlar</a>
+          </li>
+          <li>
+            <a href="page/Xidmetler.htm"
+              class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">Xidmətlər</a>
+          </li>
+          <li>
+            <a href="page/Elaqe.htm" class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">Əlaqə</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-[#FFA726] font-semibold text-lg mb-6">Bunu bilməlisiniz</h4>
+        <ul class="space-y-5">
+          <li>
+            <a href="page/İstifadecirazılasmasi.htm"
+              class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">İstifadəçi razılaşması</a>
+          </li>
+          <li>
+            <a href="page/Dasinmasiqadaqanolanmehsullar.htm"
+              class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">Daşınması qadağan olan məhsullar
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-[#FFA726] font-semibold text-lg mb-6">Bizi sosial şəbəkələrdə izləyin
+        </h4>
+        <ul class="flex items-center justify-start gap-6">
+          <li>
+            <a href="https://www.instagram.com/monokuryerrr/?utm_source=qr&igsh=MWl3cXloY2lpcXZidw%3D%3D"
+              class="hover:text-[#FFA726] text-gray-300 text-[35px] transition-all"><i
+                class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@monokuryer.az?_t=8orNTnC6Buc&_r=1"
+              class="hover:text-[#FFA726] text-gray-300 text-[30px] transition-all"><i
+                class="fa-brands fa-tiktok"></i></a>
+          </li>
+
+          <li>
+            <a href="https://wa.me/994553010601"
+              class="hover:text-[#FFA726] text-gray-300 text-[30px] transition-all"><i
+                class="fa-brands fa-whatsapp"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-[#FFA726] font-semibold text-lg mb-6">Əlaqə</h4>
+        <ul class="space-y-5">
+
+          <li>
+            <a href="mailto:Monokuryer.az@gmail.com"
+              class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">Monokuryer.az@gmail.com</a>
+          </li>
+          <li>
+            <a href="tel:+994553010601" class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">(055) 301
+              06 01</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t text-center border-[#6b5f5f] pt-8 mt-8">
+      <p class="text-gray-300 text-[19px]">
+        © 2024 Copyright: Monokuryer.az
+      </p>
+    </div>
+  </footer>
+  <script src="js/hesab.js"></script>
+  <script src="js/App.js"></script>
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/66c0ee020cca4f8a7a7729ca/1i5gq3edh';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
 </body>
 
 </html>

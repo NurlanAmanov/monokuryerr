@@ -21,7 +21,6 @@ function updateText(role) {
         partnyor.style.display = "none";
     }
 }
-
 window.onload = function () {
     document.getElementById('kuryer-radio').checked = true; 
     updateText('kuryer'); 
