@@ -81,68 +81,64 @@
   
       <div id="loginpanel" style="display: none;" class="fixed inset-0 p-4 flex flex-wrap justify-center items-center w-full h-full z-[1000] before:fixed before:inset-0 before:w-full before:h-full before:bg-[rgba(0,0,0,0.5)] overflow-auto ">
         <div class="w-full max-w-lg bg-white shadow-lg rounded-lg p-6 relative">
-            <div class="flex items-center pb-3 border-b border-gray-300">
-                <h3 class="text-gray-800 text-xl font-bold flex-1">Hesaba daxil ol</h3>
-            <button onclick="closehesab()">
-              <svg  xmlns="http://www.w3.org/2000/svg" class="w-3 ml-2 cursor-pointer shrink-0 fill-gray-400 hover:fill-red-500"
-              viewBox="0 0 320.591 320.591">
-              <path
-                  d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
-                  data-original="#000000"></path>
-              <path
-                  d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
-                  data-original="#000000"></path>
-          </svg>
-            </button>
-            </div>
-    
-            <div class="border-t border-gray-300 pt-6 flex justify-center gap-4">
-            
-              <button 
-                  class="px-4 py-2 rounded-lg text-white text-sm font-medium border-none outline-none tracking-wide bg-blue-600 hover:bg-blue-700 active:bg-blue-600">Qeydiyyatdan keç</button>
+          <div class="flex items-center pb-3 border-b border-gray-300">
+              <h3 class="text-gray-800 text-xl font-bold flex-1">Hesaba daxil ol</h3>
+          <button onclick="closehesab()">
+            <svg  xmlns="http://www.w3.org/2000/svg" class="w-3 ml-2 cursor-pointer shrink-0 fill-gray-400 hover:fill-red-500"
+            viewBox="0 0 320.591 320.591">
+            <path
+                d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                data-original="#000000"></path>
+            <path
+                d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                data-original="#000000"></path>
+        </svg>
+          </button>
           </div>
-          <form class="mt-8 space-y-4">
-            <div>
-              <label class="text-gray-800 text-sm mb-2 block">İstifadəçi adı və ya Mağaza adı</label>
-              <div class="relative flex items-center">
-                <input name="username" type="text" required class="w-full text-gray-800 text-sm border border-gray-300 px-4 py-3 rounded-md outline-blue-600" placeholder=" İstifadəçi adı və ya Mağaza adı" />
-                <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-4 h-4 absolute right-4" viewBox="0 0 24 24">
-                  <circle cx="10" cy="7" r="6" data-original="#000000"></circle>
-                  <path d="M14 15H6a5 5 0 0 0-5 5 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 5 5 0 0 0-5-5zm8-4h-2.59l.3-.29a1 1 0 0 0-1.42-1.42l-2 2a1 1 0 0 0 0 1.42l2 2a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42l-.3-.29H22a1 1 0 0 0 0-2z" data-original="#000000"></path>
-                </svg>
-              </div>
-            </div>
-    
-            <div>
-              <label class="text-gray-800 text-sm mb-2 block">Şifrə</label>
-              <div class="relative flex items-center">
-                <input id="passvisb" name="password" type="password" required class="w-full text-gray-800 text-sm border border-gray-300 px-4 py-3 rounded-md outline-blue-600" placeholder="Şifrə" />
-               <img onclick="changepasvisb()" id="imgvisb" src="../img/hide.png" alt="view" class="w-4 h-4 absolute right-4 cursor-pointer" >
-              </div>
-            </div>
-    
-            <div class="flex flex-wrap items-center justify-between gap-4">
-              <div class="flex items-center">
-                <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 shrink-0 text-blue-600 focus:ring-blue-500 border-gray-300 rounded" />
-                <label for="remember-me" class="ml-3 block text-sm text-gray-800">
-                 Məni yadda saxla
-                </label>
-              </div>
-              <div class="text-sm">
-                <a href="jajvascript:void(0);" class="text-blue-600 hover:underline font-semibold">
-                 Şifrəni unutdum?
-                </a>
-              </div>
-            </div>
-    
-            <div class="!mt-8">
-              <button   class="px-4 py-2 rounded-lg text-white font-medium text-sm border-none outline-none tracking-wide bg-orange-400 hover:bg-blue-700 active:bg-gray-200">Giriş et</button>
-            </div>
-            <p class="text-gray-800 text-sm !mt-8 text-center">Hesabınız yoxdur ? Elə indi qeydiyyatdan keçin <a href="page/registr.htm" class="text-blue-600 hover:underline ml-1 whitespace-nowrap font-semibold">Qeydiyyat keç</a></p>
-          </form>
-           
+  
           
-        </div>
+        <form class="mt-8 space-y-4">
+          <div>
+            <label class="text-gray-800 text-sm mb-2 block">İstifadəçi adı və ya Mağaza adı</label>
+            <div class="relative flex items-center">
+              <input name="username" type="text" required class="w-full text-gray-800 text-sm border border-gray-300 px-4 py-3 rounded-md outline-blue-600" placeholder=" İstifadəçi adı və ya Mağaza adı" />
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-4 h-4 absolute right-4" viewBox="0 0 24 24">
+                <circle cx="10" cy="7" r="6" data-original="#000000"></circle>
+                <path d="M14 15H6a5 5 0 0 0-5 5 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 5 5 0 0 0-5-5zm8-4h-2.59l.3-.29a1 1 0 0 0-1.42-1.42l-2 2a1 1 0 0 0 0 1.42l2 2a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42l-.3-.29H22a1 1 0 0 0 0-2z" data-original="#000000"></path>
+              </svg>
+            </div>
+          </div>
+  
+          <div>
+            <label class="text-gray-800 text-sm mb-2 block">Şifrə</label>
+            <div class="relative flex items-center">
+              <input id="passvisb" name="password" type="password" required class="w-full text-gray-800 text-sm border border-gray-300 px-4 py-3 rounded-md outline-blue-600" placeholder="Şifrə" />
+             <img onclick="changepasvisb()" id="imgvisb" src="../img/hide.png" alt="view" class="w-4 h-4 absolute right-4 cursor-pointer" >
+            </div>
+          </div>
+  
+          <div class="flex flex-wrap items-center justify-between gap-4">
+            <div class="flex items-center">
+              <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 shrink-0 text-blue-600 focus:ring-blue-500 border-gray-300 rounded" />
+              <label for="remember-me" class="ml-3 block text-sm text-gray-800">
+               Məni yadda saxla
+              </label>
+            </div>
+            <div class="text-sm">
+              <a href="jajvascript:void(0);" class="text-blue-600 hover:underline font-semibold">
+               Şifrəni unutdum?
+              </a>
+            </div>
+          </div>
+  
+          <div class="!mt-8">
+            <button   class="px-4 py-2 rounded-lg text-white font-medium text-sm border-none outline-none tracking-wide bg-orange-400 hover:bg-blue-700 active:bg-gray-200">Giriş et</button>
+          </div>
+          <p class="text-gray-800 text-sm !mt-8 text-center">Hesabınız yoxdur ? Elə indi qeydiyyatdan keçin <a href="page/registr.htm" class="text-blue-600 hover:underline ml-1 whitespace-nowrap font-semibold">Qeydiyyat keç</a></p>
+        </form>
+         
+        
+      </div>
     </div>
     <div id="regstrpage" style="display: none;" class="fixed inset-0  p-4 flex flex-wrap justify-center items-center w-full h-full z-[1000] before:fixed before:inset-0 before:w-full before:h-full before:bg-[rgba(0,0,0,0.5)] overflow-auto ">
       <div class="w-full flex flex-col xl:flex-row bg-white shadow-lg rounded-lg relative">
